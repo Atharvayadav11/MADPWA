@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    /* Dark theme by default */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    
+    --card: 240 10% 7%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 240 10% 5%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 262 80% 50%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 64.9%;
+    
+    --accent: 262 30% 16%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 5% 15.9%;
+    --input: 240 5% 15.9%;
+    --ring: 262 80% 50%;
+    
+    --radius: 0.5rem;
+
+    /* Custom colors for your app */
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 98%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Enhanced card styles */
+  .card {
+    @apply shadow-md shadow-black/20 border-secondary/20;
+  }
+  
+  /* Passed/failed states for test results */
+  .border-passed {
+    @apply border-l-4 border-l-emerald-500;
+  }
+  
+  .border-failed {
+    @apply border-l-4 border-l-destructive;
+  }
+  
+  /* Enhanced hover effects */
+  .card-hover-effect {
+    @apply transition-all duration-200 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30;
+  }
+  
+  /* Button enhancements */
+  .btn-glow {
+    @apply relative overflow-hidden;
+  }
+  
+  .btn-glow::after {
+    @apply content-[''] absolute inset-0 bg-primary/20 blur-xl opacity-0 transition-opacity duration-300;
+  }
+  
+  .btn-glow:hover::after {
+    @apply opacity-100;
+  }
+}

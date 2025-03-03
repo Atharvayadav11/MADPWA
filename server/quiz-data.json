@@ -1,0 +1,2038 @@
+{
+    "categories": [
+      {
+        "name": "Web Development",
+        "description": "Tests covering various web development topics and technologies",
+        "imageUrl": "https://example.com/images/web-dev.jpg",
+        "tests": [
+          {
+            "title": "HTML Basics",
+            "description": "Test your knowledge of HTML fundamentals",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "What does HTML stand for?",
+                "options": [
+                  "Hyper Text Markup Language",
+                  "Hyper Transfer Markup Language",
+                  "High Text Machine Language",
+                  "Hyperlink Text Management Language"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "Which HTML tag is used to define an internal style sheet?",
+                "options": [
+                  "<css>",
+                  "<script>",
+                  "<style>",
+                  "<link>"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which HTML attribute specifies an alternate text for an image?",
+                "options": [
+                  "title",
+                  "alt",
+                  "longdesc",
+                  "src"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is the correct HTML element for inserting a line break?",
+                "options": [
+                  "<lb>",
+                  "<break>",
+                  "<br>",
+                  "<newline>"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Choose the correct HTML element to define emphasized text",
+                "options": [
+                  "<italic>",
+                  "<i>",
+                  "<em>",
+                  "<strong>"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which doctype is correct for HTML5?",
+                "options": [
+                  "<!DOCTYPE HTML5>",
+                  "<!DOCTYPE html>",
+                  "<!DOCTYPE HTML PUBLIC>",
+                  "<DOCTYPE HTML>"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which HTML element is used to specify a header for a document or section?",
+                "options": [
+                  "<head>",
+                  "<top>",
+                  "<header>",
+                  "<heading>"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What is the correct HTML for creating a checkbox?",
+                "options": [
+                  "<input type=\"checkbox\">",
+                  "<check>",
+                  "<checkbox>",
+                  "<input type=\"check\">"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "What is the correct HTML for making a text input field?",
+                "options": [
+                  "<textinput type=\"text\">",
+                  "<input type=\"textfield\">",
+                  "<input type=\"text\">",
+                  "<textfield>"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which HTML5 element is used to display a scalar measurement within a range?",
+                "options": [
+                  "<gauge>",
+                  "<measure>",
+                  "<meter>",
+                  "<range>"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "title": "CSS Fundamentals",
+            "description": "Test your knowledge of CSS styling concepts",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "What does CSS stand for?",
+                "options": [
+                  "Creative Style Sheets",
+                  "Cascading Style Sheets",
+                  "Computer Style Sheets",
+                  "Colorful Style Sheets"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which property is used to change the background color?",
+                "options": [
+                  "color",
+                  "bgcolor",
+                  "background-color",
+                  "background"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "How do you select an element with id 'demo'?",
+                "options": [
+                  ".demo",
+                  "#demo",
+                  "*demo",
+                  "demo"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which CSS property controls the text size?",
+                "options": [
+                  "text-size",
+                  "font-style",
+                  "font-size",
+                  "text-style"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "How do you display hyperlinks without an underline?",
+                "options": [
+                  "a {text-decoration: none;}",
+                  "a {underline: none;}",
+                  "a {text-decoration: no-underline;}",
+                  "a {decoration: no-underline;}"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "Which property is used to change the font of an element?",
+                "options": [
+                  "font-style",
+                  "font-weight",
+                  "font-family",
+                  "font-type"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "How do you make a list that lists its items with squares?",
+                "options": [
+                  "list-style-type: square;",
+                  "list: square;",
+                  "list-type: square;",
+                  "list-style: square;"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "What is the default value of the position property?",
+                "options": [
+                  "relative",
+                  "fixed",
+                  "absolute",
+                  "static"
+                ],
+                "correctOption": 3,
+                "marks": 1
+              },
+              {
+                "text": "Which CSS property is used to specify the transparency of an element?",
+                "options": [
+                  "visibility",
+                  "opacity",
+                  "transparency",
+                  "filter"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which CSS property allows you to specify a shadow effect to a text?",
+                "options": [
+                  "text-shadow",
+                  "text-effect",
+                  "font-shadow",
+                  "shadow-effect"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "title": "JavaScript Basics",
+            "description": "Test your knowledge of JavaScript programming",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "Inside which HTML element do we put the JavaScript?",
+                "options": [
+                  "<javascript>",
+                  "<scripting>",
+                  "<script>",
+                  "<js>"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "How do you create a function in JavaScript?",
+                "options": [
+                  "function myFunction()",
+                  "function = myFunction()",
+                  "function:myFunction()",
+                  "function.myFunction()"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "How to write an IF statement in JavaScript?",
+                "options": [
+                  "if i = 5 then",
+                  "if i == 5 then",
+                  "if (i == 5)",
+                  "if i = 5"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "How do you declare a JavaScript variable?",
+                "options": [
+                  "var carName;",
+                  "variable carName;",
+                  "v carName;",
+                  "carName;"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "Which event occurs when the user clicks on an HTML element?",
+                "options": [
+                  "onmouseover",
+                  "onchange",
+                  "onclick",
+                  "onmouseclick"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "How do you find the number with the highest value of x and y?",
+                "options": [
+                  "Math.max(x, y)",
+                  "ceil(x, y)",
+                  "top(x, y)",
+                  "Math.ceil(x, y)"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "Which operator is used to assign a value to a variable?",
+                "options": [
+                  "*",
+                  "-",
+                  "x",
+                  "="
+                ],
+                "correctOption": 3,
+                "marks": 1
+              },
+              {
+                "text": "What will the following code return: Boolean(10 > 9)",
+                "options": [
+                  "NaN",
+                  "false",
+                  "true",
+                  "undefined"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "How do you round the number 7.25, to the nearest integer?",
+                "options": [
+                  "Math.round(7.25)",
+                  "round(7.25)",
+                  "Math.rnd(7.25)",
+                  "rnd(7.25)"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "Which method of an Array object adds and/or removes elements from an array?",
+                "options": [
+                  "toSource()",
+                  "sort()",
+                  "splice()",
+                  "toString()"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "title": "React Fundamentals",
+            "description": "Test your knowledge of React.js framework",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "What is React?",
+                "options": [
+                  "A JavaScript library for building user interfaces",
+                  "A server-side framework",
+                  "A database management system",
+                  "A programming language"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "What is JSX in React?",
+                "options": [
+                  "A database query language",
+                  "A syntax extension to JavaScript",
+                  "A new programming language",
+                  "A build tool"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What function is used to update state in a React function component?",
+                "options": [
+                  "this.state()",
+                  "this.setState()",
+                  "useState()",
+                  "changeState()"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What are props in React?",
+                "options": [
+                  "Internal component state",
+                  "Functions that change state",
+                  "Properties passed to components",
+                  "HTML properties"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which hook is used for side-effects in function components?",
+                "options": [
+                  "useState",
+                  "useEffect",
+                  "useContext",
+                  "useReducer"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What does the React.Fragment component do?",
+                "options": [
+                  "Creates reusable components",
+                  "Adds a visible container around elements",
+                  "Allows returning multiple elements without a wrapper",
+                  "Fragments data into smaller pieces"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What is the virtual DOM in React?",
+                "options": [
+                  "A special browser feature for React",
+                  "A lightweight copy of the actual DOM",
+                  "A new HTML specification",
+                  "A database for storing component states"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What lifecycle method is called after a component renders?",
+                "options": [
+                  "componentWillMount",
+                  "componentDidMount",
+                  "componentWillUpdate",
+                  "componentDidUpdate"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "How can you prevent a component from rendering in React?",
+                "options": [
+                  "Return null from the render method",
+                  "Use the preventRender() method",
+                  "Set display:none in CSS",
+                  "Use the stop() method"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "What is the purpose of keys in React lists?",
+                "options": [
+                  "For styling elements",
+                  "To encrypt component data",
+                  "To help React identify changed items",
+                  "To reference DOM elements directly"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "title": "Node.js and Express",
+            "description": "Test your knowledge of Node.js and Express framework",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "What is Node.js?",
+                "options": [
+                  "A front-end JavaScript framework",
+                  "A JavaScript runtime built on Chrome's V8 engine",
+                  "A database system",
+                  "A markup language"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is Express.js?",
+                "options": [
+                  "A client-side framework",
+                  "A database ORM",
+                  "A minimal web framework for Node.js",
+                  "A testing library"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which method is used to start a Node.js server listening for connections?",
+                "options": [
+                  "server.start()",
+                  "server.connect()",
+                  "server.listen()",
+                  "server.run()"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What does the package.json file contain?",
+                "options": [
+                  "Server configuration settings",
+                  "Database connection strings",
+                  "Project metadata and dependencies",
+                  "User authentication data"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "How do you install express module in Node.js?",
+                "options": [
+                  "npm add express",
+                  "npm install express",
+                  "npm get express",
+                  "node install express"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which of the following is middleware in Express?",
+                "options": [
+                  "A function with access to request and response objects",
+                  "A routing system",
+                  "A database connection",
+                  "A template engine"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "What is the purpose of the 'body-parser' package in Express?",
+                "options": [
+                  "To validate request data",
+                  "To parse HTTP request bodies",
+                  "To encrypt sensitive data",
+                  "To compress response data"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which Express method is used to handle GET requests?",
+                "options": [
+                  "app.get()",
+                  "app.post()",
+                  "app.request()",
+                  "app.http()"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "How do you access URL parameters in Express?",
+                "options": [
+                  "req.data.params",
+                  "req.params",
+                  "req.query",
+                  "req.parameters"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is Node.js event loop?",
+                "options": [
+                  "A UI component for handling user events",
+                  "A database transaction log",
+                  "A mechanism to handle asynchronous operations",
+                  "A security feature"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Programming Languages",
+        "description": "Tests covering various programming languages and paradigms",
+        "imageUrl": "https://example.com/images/programming.jpg",
+        "tests": [
+          {
+            "title": "Java Fundamentals",
+            "description": "Test your knowledge of Java programming language",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "What is Java?",
+                "options": [
+                  "A scripting language",
+                  "A markup language",
+                  "An object-oriented programming language",
+                  "A database query language"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which of the following is not a Java feature?",
+                "options": [
+                  "Object-oriented",
+                  "Portable",
+                  "Pointers",
+                  "Dynamic"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which statement is true about Java?",
+                "options": [
+                  "Java is a sequence-dependent programming language",
+                  "Java is a code-dependent programming language",
+                  "Java is a platform-dependent programming language",
+                  "Java is a platform-independent programming language"
+                ],
+                "correctOption": 3,
+                "marks": 1
+              },
+              {
+                "text": "Which component is used to compile, debug and execute Java programs?",
+                "options": [
+                  "JVM",
+                  "JRE",
+                  "JDK",
+                  "JIT"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which of these keywords is used to define interfaces in Java?",
+                "options": [
+                  "intf",
+                  "interface",
+                  "Implements",
+                  "Interface"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which of the following is a valid declaration of a char?",
+                "options": [
+                  "char ch = '\\utea';",
+                  "char ca = 'tea';",
+                  "char cr = \\u0223;",
+                  "char cc = 'a';"
+                ],
+                "correctOption": 3,
+                "marks": 1
+              },
+              {
+                "text": "What is the return type of the main method in Java?",
+                "options": [
+                  "int",
+                  "float",
+                  "void",
+                  "double"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which exception is thrown when java is out of memory?",
+                "options": [
+                  "MemoryError",
+                  "OutOfMemoryError",
+                  "MemoryOutOfBoundsException",
+                  "MemoryFullException"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which of these methods of the String class can be used to compare two String objects for their equality?",
+                "options": [
+                  "equals()",
+                  "compare()",
+                  "equals() and =",
+                  "=="
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "In Java, a method declared with the _______ keyword can't be overridden.",
+                "options": [
+                  "static",
+                  "const",
+                  "final",
+                  "abstract"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "title": "C++ Programming",
+            "description": "Test your knowledge of C++ programming language",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "Which of the following is one of the advantages of C++?",
+                "options": [
+                  "Platform dependent",
+                  "No object-oriented programming features",
+                  "Limited built-in functions",
+                  "High-level of abstraction"
+                ],
+                "correctOption": 3,
+                "marks": 1
+              },
+              {
+                "text": "Which of the following is the correct syntax for including a user defined header file in C++?",
+                "options": [
+                  "#include <file.h>",
+                  "#include \"file.h\"",
+                  "#include [file]",
+                  "using file.h;"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which of the following is the correct operator to access members of a class through a pointer?",
+                "options": [
+                  ".",
+                  "->",
+                  "::",
+                  "&"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is the default access modifier for members of a class?",
+                "options": [
+                  "public",
+                  "private",
+                  "protected",
+                  "friend"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is the correct way to define a constant in C++?",
+                "options": [
+                  "constant int VAR = 5;",
+                  "const int VAR = 5;",
+                  "#define VAR 5",
+                  "both B and C"
+                ],
+                "correctOption": 3,
+                "marks": 1
+              },
+              {
+                "text": "Which operator is used for dynamic memory allocation in C++?",
+                "options": [
+                  "malloc",
+                  "alloc",
+                  "new",
+                  "create"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What is polymorphism in C++?",
+                "options": [
+                  "A type of variable",
+                  "A programming error",
+                  "The ability to take multiple forms",
+                  "A function that returns void"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What is the purpose of a virtual function in C++?",
+                "options": [
+                  "To allow derived classes to override the function",
+                  "To prevent function overriding",
+                  "To make the function faster",
+                  "To create multiple instances of a function"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "Which concept is used to implement run time polymorphism in C++?",
+                "options": [
+                  "Templates",
+                  "Virtual functions",
+                  "Friend functions",
+                  "Operator overloading"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is a destructor in C++?",
+                "options": [
+                  "A special member function that constructs objects",
+                  "A special member function that destroys objects",
+                  "A function that deletes the class definition",
+                  "A function that prevents memory leaks"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "title": "JavaScript Advanced",
+            "description": "Test your knowledge of advanced JavaScript concepts",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "What is the difference between '==' and '===' operators in JavaScript?",
+                "options": [
+                  "Both are the same",
+                  "'==' checks value, '===' checks value and type",
+                  "'===' checks value, '==' checks value and type",
+                  "There is no '===' operator in JavaScript"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which JavaScript method is used to remove the last element from an array and returns that element?",
+                "options": [
+                  "pop()",
+                  "push()",
+                  "shift()",
+                  "unshift()"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "What does the 'this' keyword refer to in JavaScript?",
+                "options": [
+                  "It always refers to the window object",
+                  "It always refers to the global object",
+                  "It refers to the object that the function is a property of",
+                  "It refers to the parent object in the DOM tree"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "Which of the following is a JavaScript promise state?",
+                "options": [
+                  "Initialized",
+                  "Processing",
+                  "Pending",
+                  "Loaded"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What is closure in JavaScript?",
+                "options": [
+                  "A way to protect variables from modifications",
+                  "A function with access to variables from an outer function scope",
+                  "A method to close browser windows",
+                  "A technique to prevent memory leaks"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is the purpose of the 'use strict' directive in JavaScript?",
+                "options": [
+                  "To tell the browser to use the latest version of JavaScript",
+                  "To enable strict mode that catches common coding mistakes",
+                  "To make JavaScript code run faster",
+                  "To allow the use of new JavaScript features"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is a JavaScript generator function?",
+                "options": [
+                  "A function that creates other functions",
+                  "A function that can be paused and resumed",
+                  "A function that generates random numbers",
+                  "A built-in JavaScript method"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is the purpose of the 'map' method in JavaScript?",
+                "options": [
+                  "To map one array to another",
+                  "To create a new array with the results of calling a function on every element",
+                  "To search for an element in an array",
+                  "To sort an array"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is event bubbling in JavaScript?",
+                "options": [
+                  "A way to create new events",
+                  "A technique to handle events efficiently",
+                  "The propagation of events from child element to parent element",
+                  "A method to prevent default browser behavior"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What are JavaScript Promises used for?",
+                "options": [
+                  "To make performance promises to the browser",
+                  "To handle asynchronous operations",
+                  "To create browser alerts",
+                  "To define functions that run periodically"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "title": "Python Programming",
+            "description": "Test your knowledge of Python programming language",
+            "passingMarks": 6,
+            "duration": 5,
+            "questions": [
+              {
+                "text": "What is Python?",
+                "options": [
+                  "A programming language",
+                  "A markup language",
+                  "A database system",
+                  "An operating system"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "Which of the following is the correct way to comment multiple lines in Python?",
+                "options": [
+                  "// This is a comment",
+                  "/* This is a comment */",
+                  "Using triple quotes (''' or \"\"\")",
+                  "# This is a comment"
+                ],
+                "correctOption": 2,
+                "marks": 1
+              },
+              {
+                "text": "What is the output of print(type([]))?",
+                "options": [
+                  "<class 'list'>",
+                  "<class 'tuple'>",
+                  "<class 'array'>",
+                  "<class 'dict'>"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "How do you create a list comprehension in Python?",
+                "options": [
+                  "list = (expression for item in iterable)",
+                  "list = [expression for item in iterable]",
+                  "list = {expression for item in iterable}",
+                  "list = <expression for item in iterable>"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is the correct way to define a function in Python?",
+                "options": [
+                  "function myFunc():",
+                  "def myFunc():",
+                  "create myFunc():",
+                  "func myFunc():"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What does the 'self' parameter in a class method refer to?",
+                "options": [
+                  "The class itself",
+                  "The current instance of the class",
+                  "A required keyword",
+                  "The parent class"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "Which of the following is used to handle exceptions in Python?",
+                "options": [
+                  "try...except",
+                  "try...catch",
+                  "if...else",
+                  "for...while"
+                ],
+                "correctOption": 0,
+                "marks": 1
+              },
+              {
+                "text": "What is the purpose of '__init__' in Python classes?",
+                "options": [
+                  "To initialize variables",
+                  "To create a constructor",
+                  "To define a destructor",
+                  "To import modules"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What does the 'yield' keyword do in Python?",
+                "options": [
+                  "It terminates a function",
+                  "It pauses a function and returns a value",
+                  "It imports modules",
+                  "It defines a class"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              },
+              {
+                "text": "What is PEP 8 in Python?",
+                "options": [
+                  "A new version of Python",
+                  "A style guide for Python code",
+                  "A type of exception",
+                  "A built-in module"
+                ],
+                "correctOption": 1,
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CS Fundamentals",
+        "description": "Tests covering fundamental computer science concepts",
+        "imageUrl": "https://example.com/images/cs-fundamentals.jpg",
+        "tests": [
+            {
+                "title": "Operating Systems",
+                "description": "Test your knowledge of operating system concepts",
+                "passingMarks": 6,
+                "duration": 5,
+                "questions": [
+                  {
+                    "text": "What is an operating system?",
+                    "options": [
+                      "A hardware component",
+                      "Software that manages hardware resources",
+                      "A type of computer memory",
+                      "A networking protocol"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which of the following is not an operating system?",
+                    "options": [
+                      "Windows",
+                      "Linux",
+                      "Oracle",
+                      "macOS"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the purpose of a kernel in an operating system?",
+                    "options": [
+                      "To provide a user interface",
+                      "To manage core operations of the computer",
+                      "To store user data",
+                      "To connect to the internet"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which scheduling algorithm is based on the concept of time quantum?",
+                    "options": [
+                      "First Come First Serve",
+                      "Round Robin",
+                      "Shortest Job First",
+                      "Priority Scheduling"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a deadlock in operating systems?",
+                    "options": [
+                      "When a process is terminated unexpectedly",
+                      "When two or more processes are unable to proceed because each is waiting for resources held by others",
+                      "When the CPU is idle",
+                      "When a system crashes"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is thrashing in operating systems?",
+                    "options": [
+                      "When the CPU utilization is very high",
+                      "When a process is consuming too much memory",
+                      "When the system spends more time swapping pages than executing instructions",
+                      "When multiple processes are competing for CPU time"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is virtual memory?",
+                    "options": [
+                      "A type of non-volatile memory",
+                      "A technique that allows execution of processes that may not be completely in memory",
+                      "A memory that exists only in the cache",
+                      "A special purpose high-speed storage"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the purpose of paging in operating systems?",
+                    "options": [
+                      "To increase the speed of the processor",
+                      "To organize the file system",
+                      "To allocate disk space",
+                      "To manage memory by dividing it into fixed-size blocks"
+                    ],
+                    "correctOption": 3,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which of the following is not a process state?",
+                    "options": [
+                      "Ready",
+                      "Running",
+                      "Blocked",
+                      "Compile"
+                    ],
+                    "correctOption": 3,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a semaphore in operating systems?",
+                    "options": [
+                      "A network protocol",
+                      "A scheduling algorithm",
+                      "A synchronization tool",
+                      "A file organization method"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "title": "Object-Oriented Programming",
+                "description": "Test your knowledge of OOP concepts",
+                "passingMarks": 6,
+                "duration": 5,
+                "questions": [
+                  {
+                    "text": "What is Object-Oriented Programming?",
+                    "options": [
+                      "A programming paradigm based on mathematical functions",
+                      "A programming paradigm based on objects and classes",
+                      "A way to structure databases",
+                      "A programming language"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which of the following is not a principle of OOP?",
+                    "options": [
+                      "Inheritance",
+                      "Polymorphism",
+                      "Encapsulation",
+                      "Normalization"
+                    ],
+                    "correctOption": 3,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is encapsulation in OOP?",
+                    "options": [
+                      "The ability of a class to take multiple forms",
+                      "The bundling of data and methods that operate on that data",
+                      "The ability to create new classes from existing ones",
+                      "The process of creating objects"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is inheritance in OOP?",
+                    "options": [
+                      "The ability to hide implementation details",
+                      "The concept that objects should communicate via messages",
+                      "The mechanism by which one class acquires properties of another class",
+                      "The process of creating objects"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is polymorphism in OOP?",
+                    "options": [
+                      "The ability of an object to take on many forms",
+                      "The process of hiding implementation details",
+                      "The mechanism to create new classes",
+                      "The concept of reusing code"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is abstraction in OOP?",
+                    "options": [
+                      "The process of creating objects",
+                      "The concept of hiding implementation details and showing only functionality",
+                      "The ability to create new classes from existing ones",
+                      "The concept that everything is an object"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a constructor in OOP?",
+                    "options": [
+                      "A method that destroys objects",
+                      "A special method that is called when an object is created",
+                      "A method that copies objects",
+                      "A method that compares objects"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is method overloading?",
+                    "options": [
+                      "Having multiple methods with the same name but different parameters",
+                      "Hiding a method in a subclass",
+                      "Creating a new instance of a method",
+                      "Overwriting a method's functionality"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is method overriding?",
+                    "options": [
+                      "Creating a new instance of a method",
+                      "Having multiple methods with the same name but different parameters",
+                      "Providing a new implementation for a method already defined in a superclass",
+                      "Hiding a method in a subclass"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a class in OOP?",
+                    "options": [
+                      "An instance of an object",
+                      "A template or blueprint for creating objects",
+                      "A collection of variables",
+                      "A collection of functions"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "title": "Computer Networks",
+                "description": "Test your knowledge of computer networking concepts",
+                "passingMarks": 6,
+                "duration": 5,
+                "questions": [
+                  {
+                    "text": "What is a computer network?",
+                    "options": [
+                      "A collection of computers in a room",
+                      "A set of computers connected to share resources",
+                      "A group of computers made by the same manufacturer",
+                      "A system that connects to the internet"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which network topology has a central node to which all other nodes are connected?",
+                    "options": [
+                      "Mesh",
+                      "Star",
+                      "Ring",
+                      "Bus"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the purpose of a router in a network?",
+                    "options": [
+                      "To connect different networks together",
+                      "To boost signal strength",
+                      "To connect devices within the same network",
+                      "To provide wireless access"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which of the following is not a layer in the OSI model?",
+                    "options": [
+                      "Transport Layer",
+                      "Session Layer",
+                      "Internet Layer",
+                      "Application Layer"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the purpose of DNS in networking?",
+                    "options": [
+                      "To assign IP addresses",
+                      "To secure network connections",
+                      "To translate domain names to IP addresses",
+                      "To encrypt data transmission"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What does HTTP stand for?",
+                    "options": [
+                      "Hypertext Transfer Protocol",
+                      "Hypertext Transmission Protocol",
+                      "Hyper Transfer Text Protocol",
+                      "High-level Transfer Protocol"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which protocol is used for secure web browsing?",
+                    "options": [
+                      "HTTP",
+                      "FTP",
+                      "HTTPS",
+                      "SMTP"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the function of DHCP in networking?",
+                    "options": [
+                      "To secure network connections",
+                      "To translate domain names to IP addresses",
+                      "To dynamically assign IP addresses to devices",
+                      "To encrypt data transmission"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which of the following is not a network protocol?",
+                    "options": [
+                      "SMTP",
+                      "FTP",
+                      "HTTP",
+                      "XML"
+                    ],
+                    "correctOption": 3,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a subnet mask used for?",
+                    "options": [
+                      "To identify the network portion of an IP address",
+                      "To encrypt network traffic",
+                      "To speed up network connections",
+                      "To block unwanted traffic"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "title": "Computer Architecture",
+                "description": "Test your knowledge of computer architecture concepts",
+                "passingMarks": 6,
+                "duration": 5,
+                "questions": [
+                  {
+                    "text": "What is a CPU?",
+                    "options": [
+                      "Computer Processing Unit",
+                      "Central Processing Unit",
+                      "Control Processing Unit",
+                      "Core Processing Unit"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the purpose of the ALU in a CPU?",
+                    "options": [
+                      "To store data temporarily",
+                      "To control the flow of data",
+                      "To perform arithmetic and logical operations",
+                      "To communicate with peripheral devices"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a cache memory?",
+                    "options": [
+                      "A type of permanent storage",
+                      "A small, fast memory used to improve CPU performance",
+                      "A memory used for backing up data",
+                      "A memory used for storing graphics"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is pipelining in computer architecture?",
+                    "options": [
+                      "A method of connecting computers in a network",
+                      "A technique to increase processor throughput by executing multiple instructions simultaneously",
+                      "A way to store data on hard disks",
+                      "A technique to cool the CPU"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the purpose of the control unit in a CPU?",
+                    "options": [
+                      "To perform arithmetic operations",
+                      "To store data temporarily",
+                      "To direct the operation of the processor",
+                      "To connect to peripheral devices"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the difference between RISC and CISC?",
+                    "options": [
+                      "RISC uses complex instructions while CISC uses simple instructions",
+                      "RISC uses simple instructions while CISC uses complex instructions",
+                      "RISC is slower than CISC",
+                      "RISC uses more memory than CISC"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a register in CPU?",
+                    "options": [
+                      "A device that regulates power supply",
+                      "A small, high-speed storage area within the CPU",
+                      "A type of memory that stores the operating system",
+                      "A device that counts clock cycles"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a bus in computer architecture?",
+                    "options": [
+                      "A software component that manages data flow",
+                      "A communication system that transfers data between components",
+                      "A type of memory storage",
+                      "A cooling system for the CPU"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the purpose of the memory management unit (MMU)?",
+                    "options": [
+                      "To manage the allocation of RAM",
+                      "To translate virtual addresses to physical addresses",
+                      "To manage cache memory",
+                      "To control the flow of data in the CPU"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the von Neumann architecture?",
+                    "options": [
+                      "A computer design where program and data are stored in the same memory",
+                      "A computer design with multiple processors",
+                      "A computer design where program and data are stored in separate memories",
+                      "A computer design focused on parallel processing"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "title": "Database Management Systems",
+                "description": "Test your knowledge of DBMS and SQL concepts",
+                "passingMarks": 6,
+                "duration": 5,
+                "questions": [
+                  {
+                    "text": "What is a database?",
+                    "options": [
+                      "A collection of related tables",
+                      "A collection of organized data",
+                      "A programming language",
+                      "A type of server"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a primary key?",
+                    "options": [
+                      "The first column in a table",
+                      "A column that can contain NULL values",
+                      "A column or set of columns that uniquely identifies each row in a table",
+                      "A key used to encrypt data"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is normalization in DBMS?",
+                    "options": [
+                      "A process to make data case-sensitive",
+                      "A process to organize data to reduce redundancy",
+                      "A process to encrypt data",
+                      "A process to compress data"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is SQL?",
+                    "options": [
+                      "Structured Query Language",
+                      "System Query Language",
+                      "Standard Query Logic",
+                      "Simple Query Language"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which SQL command is used to create a new table?",
+                    "options": [
+                      "NEW TABLE",
+                      "CREATE TABLE",
+                      "BUILD TABLE",
+                      "CONSTRUCT TABLE"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which SQL clause is used to filter records?",
+                    "options": [
+                      "FILTER",
+                      "HAVING",
+                      "SELECT",
+                      "WHERE"
+                    ],
+                    "correctOption": 3,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is a foreign key?",
+                    "options": [
+                      "A key used in other countries",
+                      "A primary key in another table",
+                      "A key that references a column in another table",
+                      "A key used to encrypt foreign data"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What does ACID stand for in the context of databases?",
+                    "options": [
+                      "Atomicity, Consistency, Isolation, Durability",
+                      "Authentication, Computation, Integrity, Delivery",
+                      "Availability, Coherence, Integration, Design",
+                      "Accuracy, Completeness, Interaction, Delivery"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which SQL command is used to update data in a database?",
+                    "options": [
+                      "SAVE",
+                      "MODIFY",
+                      "UPDATE",
+                      "CHANGE"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the purpose of the SQL JOIN clause?",
+                    "options": [
+                      "To create new tables",
+                      "To combine rows from two or more tables",
+                      "To remove rows from tables",
+                      "To filter records"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Aptitude",
+            "description": "Tests covering various aptitude and reasoning skills",
+            "imageUrl": "https://example.com/images/aptitude.jpg",
+            "tests": [
+              {
+                "title": "Numerical Reasoning",
+                "description": "Test your numerical reasoning skills",
+                "passingMarks": 6,
+                "duration": 5,
+                "questions": [
+                  {
+                    "text": "If a shirt costs $45 after a 25% discount, what was the original price?",
+                    "options": [
+                      "$56.25",
+                      "$60",
+                      "$67.50",
+                      "$33.75"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "A car travels at 60 km/h for the first half of a journey and at 40 km/h for the second half. What is the average speed for the entire journey?",
+                    "options": [
+                      "50 km/h",
+                      "48 km/h",
+                      "45 km/h",
+                      "42 km/h"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If 8 workers can complete a task in 6 days, how many days would it take 12 workers to complete the same task?",
+                    "options": [
+                      "4 days",
+                      "9 days",
+                      "3 days",
+                      "8 days"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the next number in the sequence: 2, 6, 12, 20, 30, ?",
+                    "options": [
+                      "42",
+                      "36",
+                      "40",
+                      "48"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "A pipe can fill a tank in 6 hours. Another pipe can empty the tank in 12 hours. If both pipes are open, how long will it take to fill the tank?",
+                    "options": [
+                      "4 hours",
+                      "8 hours",
+                      "12 hours",
+                      "18 hours"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If a rectangular field has a length of 24 meters and a width of 18 meters, what is its area?",
+                    "options": [
+                      "42 square meters",
+                      "432 square meters",
+                      "414 square meters",
+                      "332 square meters"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If a number is increased by 20% and then decreased by 20%, the final value is what percentage of the original?",
+                    "options": [
+                      "100%",
+                      "96%",
+                      "80%",
+                      "120%"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "A train travels at a speed of 72 km/h. How many meters does it travel in 15 seconds?",
+                    "options": [
+                      "180 meters",
+                      "300 meters",
+                      "1080 meters",
+                      "720 meters"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If the ratio of boys to girls in a class is 4:5 and there are 36 students in total, how many boys are there?",
+                    "options": [
+                      "16",
+                      "20",
+                      "24",
+                      "18"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "What is the simple interest on $1,500 at 4.5% per annum for 3 years?",
+                    "options": [
+                      "$202.50",
+                      "$675",
+                      "$1,702.50",
+                      "$67.50"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "title": "Logical Reasoning",
+                "description": "Test your logical reasoning and problem-solving skills",
+                "passingMarks": 6,
+                "duration": 5,
+                "questions": [
+                  {
+                    "text": "If all Zips are Zaps, and all Zaps are Zops, then:",
+                    "options": [
+                      "All Zips are Zops",
+                      "All Zops are Zips",
+                      "No Zips are Zops",
+                      "Some Zops are not Zips"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Complete the series: 3, 6, 11, 18, 27, ?",
+                    "options": [
+                      "36",
+                      "38",
+                      "40",
+                      "42"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If CAT is coded as 312, how would DOG be coded?",
+                    "options": [
+                      "413",
+                      "403",
+                      "415",
+                      "407"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "A is B's sister. C is B's mother. D is C's father. E is D's mother. How is A related to D?",
+                    "options": [
+                      "Granddaughter",
+                      "Daughter",
+                      "Great granddaughter",
+                      "Grandmother"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If FRIEND is coded as HUMJTK, how would CANDLE be coded?",
+                    "options": [
+                      "EDRIRL",
+                      "DCQHQN",
+                      "ESJFME",
+                      "FYOBQM"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "In a row of children, Ram is 7th from the left and Shyam is 9th from the right. If they interchange their positions, Ram becomes 22nd from the left. How many children are there in the row?",
+                    "options": [
+                      "30",
+                      "31",
+                      "32",
+                      "33"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Select the odd one out: Lion, Tiger, Elephant, Leopard, Cheetah",
+                    "options": [
+                      "Lion",
+                      "Tiger",
+                      "Elephant",
+                      "Cheetah"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If it is Monday today, what day will it be after 61 days?",
+                    "options": [
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday"
+                    ],
+                    "correctOption": 3,
+                    "marks": 1
+                  },
+                  {
+                    "text": "A clock shows 8:30. What is the angle between the hour and minute hands?",
+                    "options": [
+                      "75 degrees",
+                      "80 degrees",
+                      "85 degrees",
+                      "90 degrees"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Which of the following does not belong to the group? MLK, JIH, GFE, CDE, BAZ",
+                    "options": [
+                      "MLK",
+                      "JIH",
+                      "GFE",
+                      "CDE"
+                    ],
+                    "correctOption": 3,
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "title": "Verbal Reasoning",
+                "description": "Test your verbal reasoning and language skills",
+                "passingMarks": 6,
+                "duration": 5,
+                "questions": [
+                  {
+                    "text": "Choose the word that is a synonym of 'BENEVOLENT':",
+                    "options": [
+                      "Malicious",
+                      "Charitable",
+                      "Hostile",
+                      "Indifferent"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Choose the word that is an antonym of 'FRUGAL':",
+                    "options": [
+                      "Economical",
+                      "Thrifty",
+                      "Extravagant",
+                      "Wise"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Complete the analogy: Book is to Reading as Fork is to _______:",
+                    "options": [
+                      "Kitchen",
+                      "Eating",
+                      "Cooking",
+                      "Food"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Choose the word that does not belong: Stapler, Pen, Paper, Marker, Banana",
+                    "options": [
+                      "Stapler",
+                      "Pen",
+                      "Paper",
+                      "Banana"
+                    ],
+                    "correctOption": 3,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If 'pink' means 'blue', 'blue' means 'white', 'white' means 'black', and 'black' means 'red', what is the color of milk?",
+                    "options": [
+                      "Blue",
+                      "White",
+                      "Black",
+                      "Red"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Select the pair of words with a relationship most similar to: ARTIFACT : ARCHEOLOGIST",
+                    "options": [
+                      "STAR : ASTRONOMER",
+                      "BONE : ORTHOPEDIST",
+                      "CRIME : LAWYER",
+                      "MEDICINE : PATIENT"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Choose the option that best completes the sentence: The politician's speech was so _______ that even his supporters had difficulty understanding it.",
+                    "options": [
+                      "Eloquent",
+                      "Articulate",
+                      "Ambiguous",
+                      "Concise"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Find the odd one out: Copper, Tin, Iron, Steel, Zinc",
+                    "options": [
+                      "Copper",
+                      "Tin",
+                      "Steel",
+                      "Zinc"
+                    ],
+                    "correctOption": 2,
+                    "marks": 1
+                  },
+                  {
+                    "text": "If FRIEND = 6 and ENEMY = 5, then ACQUAINTANCE = ?",
+                    "options": [
+                      "12",
+                      "11",
+                      "13",
+                      "10"
+                    ],
+                    "correctOption": 0,
+                    "marks": 1
+                  },
+                  {
+                    "text": "Select the word that means the same as 'PROCRASTINATE':",
+                    "options": [
+                      "Accelerate",
+                      "Delay",
+                      "Motivate",
+                      "Accomplish"
+                    ],
+                    "correctOption": 1,
+                    "marks": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
