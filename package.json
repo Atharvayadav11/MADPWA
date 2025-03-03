@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "node server/index.js",
-  "build": "tsc -b && cd server && npm install && cd .. && vite build",    "lint": "eslint .",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
