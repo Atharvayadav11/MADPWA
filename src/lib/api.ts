@@ -3,7 +3,7 @@ import { toast } from '@/components/ui/use-toast';
 
 // Create axios instance with base URL
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://madpwa.onrender.com/api',
+  baseURL: import.meta.env.VITE_API_URL || '/api',
   headers: {
     'Content-Type': 'application/json',
   },
