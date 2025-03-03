@@ -6,6 +6,7 @@ import authRoutes from './routes/auth.js';
 import categoryRoutes from './routes/categories.js';
 import testRoutes from './routes/tests.js';
 import attemptRoutes from './routes/attempts.js';
+import path from 'path';
 
 dotenv.config();
 
