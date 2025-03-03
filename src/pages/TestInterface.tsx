@@ -113,7 +113,7 @@ const TestInterface = () => {
     
     setSubmitting(true);
     try {
-      const response = await api.post(`/tests/${testId}/submit`, {
+       await api.post(`/tests/${testId}/submit`, {
         answers: Object.entries(answers).map(([questionId, optionIndex]) => ({
           questionId,
           selectedOption: optionIndex,
@@ -181,7 +181,7 @@ const TestInterface = () => {
             </span>
           </div>
         </div>
-        <Progress value={progress} className="h-2 bg-secondary" indicatorClassName="bg-primary" />
+        <Progress value={progress} className="h-2 bg-secondary [&>[role=progressbar]]:bg-primary" />
       </div>
       
       {/* Question card */}
