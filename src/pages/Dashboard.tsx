@@ -45,10 +45,14 @@ const Dashboard = () => {
           api.get('/attempts')
         ]);
         
-        setCategories(categoriesRes.data);
-        setAttempts(attemptsRes.data);
+        // Add safety checks before setting state
+        setCategories(Array.isArray(categoriesRes.data) ? categoriesRes.data : []);
+        setAttempts(Array.isArray(attemptsRes.data) ? attemptsRes.data : []);
       } catch (error) {
         console.error('Error fetching dashboard data:', error);
+        // Set empty arrays when error occurs to prevent crashes
+        setCategories([]);
+        setAttempts([]);
       } finally {
         setLoading(false);
       }
@@ -60,11 +64,11 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background p-4">
       <div className="flex justify-between items-center mb-6">
-        <h1 className=" font-bold text-foreground">
+        <h1 className="font-bold text-foreground">
           <span className="text-3xl bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
             Pariksha
           </span>
-          <p className=" text-2xl text-muted-foreground">Challenge your knowledge!</p>
+          <p className="text-2xl text-muted-foreground">Challenge your knowledge!</p>
         </h1>
         
         <div className="flex gap-2">
@@ -78,7 +82,7 @@ const Dashboard = () => {
       </div>
       
       <div className="mb-6">
-        <h2 className="text-xl font-semibold mb-2 text-foreground">Welcome, {user?.name}</h2>
+        <h2 className="text-xl font-semibold mb-2 text-foreground">Welcome, {user?.name || 'User'}</h2>
         <p className="text-muted-foreground">Select a category to start a quiz or review your previous attempts.</p>
       </div>
 
@@ -90,12 +94,14 @@ const Dashboard = () => {
         
         <TabsContent value="categories" className="space-y-4">
           {loading ? (
-            Array(3).fill(0).map((_, i) => (
+            // Safe array mapping for loading skeleton
+            [...Array(3)].map((_, i) => (
               <div key={i} className="space-y-2">
                 <Skeleton className="h-[125px] w-full rounded-lg bg-secondary/50" />
               </div>
             ))
-          ) : (
+          ) : categories.length > 0 ? (
+            // Only map if categories is an array with items
             categories.map((category) => (
               <Link key={category._id} to={`/categories/${category._id}`}>
                 <Card className="hover:bg-accent transition-colors card card-hover-effect border-secondary/40 bg-card">
@@ -112,17 +118,29 @@ const Dashboard = () => {
                 </Card>
               </Link>
             ))
+          ) : (
+            // Fallback when no categories are available
+            <Card className="bg-card border-secondary/40">
+              <CardHeader>
+                <CardTitle className="text-card-foreground">No categories available</CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  Please check back later for available quiz categories.
+                </CardDescription>
+              </CardHeader>
+            </Card>
           )}
         </TabsContent>
         
         <TabsContent value="history" className="space-y-4">
           {loading ? (
-            Array(3).fill(0).map((_, i) => (
+            // Safe array mapping for loading skeleton
+            [...Array(3)].map((_, i) => (
               <div key={i} className="space-y-2">
                 <Skeleton className="h-[125px] w-full rounded-lg bg-secondary/50" />
               </div>
             ))
-          ) : attempts.length > 0 ? (
+          ) : attempts && attempts.length > 0 ? (
+            // Only map if attempts is an array with items
             attempts.map((attempt) => (
               <Link key={attempt._id} to={`/tests/${attempt.testId._id}/results`}>
                 <Card className={`card card-hover-effect transition-colors border-secondary/40 bg-card ${attempt.passed ? 'border-passed' : 'border-failed'}`}>
@@ -160,11 +178,10 @@ const Dashboard = () => {
         </TabsContent>
       </Tabs>
       <footer className='mt-20'>
-  <p className="text-muted-foreground text-justify" style={{ textAlign: "justify", textJustify: "inter-word" }}>
-    Developed by Atharva Yadav [T23-101], Pratik Vishe [T23-100], Simran Yewle [T23-102] as a part of the course project for the course "MAD Lab" at TSEC.
-  </p>
-</footer>
-
+        <p className="text-muted-foreground text-justify" style={{ textAlign: "justify", textJustify: "inter-word" }}>
+          Developed by Atharva Yadav [T23-101], Pratik Vishe [T23-100], Simran Yewle [T23-102] as a part of the course project for the course "MAD Lab" at TSEC.
+        </p>
+      </footer>
     </div>
   );
 };
