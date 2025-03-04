@@ -50,7 +50,15 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen p-4 bg-background">
+     
       <Card className="w-full max-w-md">
+      
+      <h1 className="mt-3 ml-3 font-bold text-foreground">
+          <span className="text-3xl mt-3 bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+            Pariksha
+          </span>
+          <p className="text-2xl text-muted-foreground">Challenge your knowledge!</p>
+        </h1>
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">Login</CardTitle>
           <CardDescription className="text-center">
