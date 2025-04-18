@@ -97,6 +97,7 @@ router.get('/:id/questions', async (req, res) => {
 //     res.status(500).json({ message: 'Server error', error: error.message });
 //   }
 // });
+// Submit test
 router.post('/:id/submit', async (req, res) => {
   try {
     const { user, answers, timeTaken } = req.body;
@@ -119,9 +120,8 @@ router.post('/:id/submit', async (req, res) => {
         continue;
       }
       
-      // Use the isCorrect value from the frontend for now
-      // Later you can implement server-side validation if needed
-      const isCorrect = answer.isCorrect;
+      // Compare the selected option index with the correct option index
+      const isCorrect = question.correctOption === answer.selectedOption;
       if (isCorrect) {
         score += question.marks || 1;
       }
@@ -135,11 +135,11 @@ router.post('/:id/submit', async (req, res) => {
     
     // Create attempt record
     const attempt = new Attempt({
-      user: user, // Use the user ID from request body
+      user: user || req.body.user, // Use user ID from request body
       testId: test._id,
       score,
       passed: score >= (test.passingMarks || 0),
-      timeTaken: timeTaken || (60 * test.duration),
+      timeTaken: timeTaken || 60 * test.duration,
       answers: answersWithDetails
     });
     
@@ -156,7 +156,6 @@ router.post('/:id/submit', async (req, res) => {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 });
-
 // Get test results
 router.get('/:id/results', async (req, res) => {
   try {
