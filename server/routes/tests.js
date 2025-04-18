@@ -7,7 +7,7 @@ import { auth } from '../middleware/auth.js';
 const router = express.Router();
 
 // Get test by ID
-router.get('/:id', auth, async (req, res) => {
+router.get('/:id',  async (req, res) => {
   try {
     const test = await Test.findById(req.params.id)
       .populate('category', 'name')
@@ -24,7 +24,7 @@ router.get('/:id', auth, async (req, res) => {
 });
 
 // Get test questions
-router.get('/:id/questions', auth, async (req, res) => {
+router.get('/:id/questions', async (req, res) => {
   try {
     const test = await Test.findById(req.params.id)
       .populate({
@@ -44,7 +44,7 @@ router.get('/:id/questions', auth, async (req, res) => {
 });
 
 // Submit test
-router.post('/:id/submit', auth, async (req, res) => {
+router.post('/:id/submit',  async (req, res) => {
   try {
     const { answers } = req.body;
     const testId = req.params.id;
@@ -99,7 +99,7 @@ router.post('/:id/submit', auth, async (req, res) => {
 });
 
 // Get test results
-router.get('/:id/results', auth, async (req, res) => {
+router.get('/:id/results', async (req, res) => {
   try {
     const testId = req.params.id;
     
