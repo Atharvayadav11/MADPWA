@@ -5,7 +5,7 @@ import { auth } from '../middleware/auth.js';
 const router = express.Router();
 
 // Get all attempts by user
-router.get('/', auth, async (req, res) => {
+router.get('/',  async (req, res) => {
   try {
     const attempts = await Attempt.find({ user: req.user.id })
       .sort({ completedAt: -1 })
@@ -25,7 +25,7 @@ router.get('/', auth, async (req, res) => {
 });
 
 // Get attempt by ID
-router.get('/:id', auth, async (req, res) => {
+router.get('/:id',  async (req, res) => {
   try {
     const attempt = await Attempt.findOne({
       _id: req.params.id,
