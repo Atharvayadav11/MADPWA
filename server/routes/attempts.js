@@ -29,7 +29,7 @@ router.get('/:id',  async (req, res) => {
   try {
     const attempt = await Attempt.findOne({
       _id: req.params.id,
-      user: req.user.id
+    
     })
     .populate({
       path: 'testId',
