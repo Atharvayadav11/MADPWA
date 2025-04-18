@@ -6,7 +6,7 @@ import { auth } from '../middleware/auth.js';
 const router = express.Router();
 
 // Get all categories
-router.get('/', auth, async (req, res) => {
+router.get('/',  async (req, res) => {
   try {
     const categories = await Category.find();
     res.json(categories);
@@ -16,7 +16,7 @@ router.get('/', auth, async (req, res) => {
 });
 
 // Get category by ID
-router.get('/:id', auth, async (req, res) => {
+router.get('/:id',  async (req, res) => {
   try {
     const category = await Category.findById(req.params.id);
     if (!category) {
@@ -30,7 +30,7 @@ router.get('/:id', auth, async (req, res) => {
 });
 
 // Get tests by category ID
-router.get('/:id/tests', auth, async (req, res) => {
+router.get('/:id/tests', async (req, res) => {
   try {
     const tests = await Test.find({ category: req.params.id })
       .select('title description totalQuestions totalMarks passingMarks duration');
