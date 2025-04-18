@@ -44,9 +44,62 @@ router.get('/:id/questions', async (req, res) => {
 });
 
 // Submit test
-router.post('/:id/submit',  async (req, res) => {
+// router.post('/:id/submit',  async (req, res) => {
+//   try {
+//     const { answers } = req.body;
+//     const testId = req.params.id;
+    
+//     // Get test details
+//     const test = await Test.findById(testId);
+//     if (!test) {
+//       return res.status(404).json({ message: 'Test not found' });
+//     }
+    
+//     // Calculate score
+//     let score = 0;
+//     const answersWithDetails = [];
+    
+//     for (const answer of answers) {
+//       const question = await Question.findById(answer.questionId);
+//       if (!question) continue;
+      
+//       const isCorrect = question.correctOption === answer.selectedOption;
+//       if (isCorrect) {
+//         score += question.marks;
+//       }
+      
+//       answersWithDetails.push({
+//         questionId: question._id,
+//         selectedOption: answer.selectedOption,
+//         isCorrect
+//       });
+//     }
+    
+//     // Create attempt record
+//     const attempt = new Attempt({
+//       user: req.user.id,
+//       testId: test._id,
+//       score,
+//       passed: score >= test.passingMarks,
+//       timeTaken: 60 * test.duration, // Assuming full time for now
+//       answers: answersWithDetails
+//     });
+    
+//     await attempt.save();
+    
+//     res.json({
+//       score,
+//       totalMarks: test.totalMarks,
+//       passed: score >= test.passingMarks,
+//       attemptId: attempt._id
+//     });
+//   } catch (error) {
+//     res.status(500).json({ message: 'Server error', error: error.message });
+//   }
+// });
+router.post('/:id/submit', async (req, res) => {
   try {
-    const { answers } = req.body;
+    const { user, answers, timeTaken } = req.body;
     const testId = req.params.id;
     
     // Get test details
@@ -61,11 +114,16 @@ router.post('/:id/submit',  async (req, res) => {
     
     for (const answer of answers) {
       const question = await Question.findById(answer.questionId);
-      if (!question) continue;
+      if (!question) {
+        console.log(`Question not found: ${answer.questionId}`);
+        continue;
+      }
       
-      const isCorrect = question.correctOption === answer.selectedOption;
+      // Use the isCorrect value from the frontend for now
+      // Later you can implement server-side validation if needed
+      const isCorrect = answer.isCorrect;
       if (isCorrect) {
-        score += question.marks;
+        score += question.marks || 1;
       }
       
       answersWithDetails.push({
@@ -77,11 +135,11 @@ router.post('/:id/submit',  async (req, res) => {
     
     // Create attempt record
     const attempt = new Attempt({
-      user: req.user.id,
+      user: user, // Use the user ID from request body
       testId: test._id,
       score,
-      passed: score >= test.passingMarks,
-      timeTaken: 60 * test.duration, // Assuming full time for now
+      passed: score >= (test.passingMarks || 0),
+      timeTaken: timeTaken || (60 * test.duration),
       answers: answersWithDetails
     });
     
@@ -89,11 +147,12 @@ router.post('/:id/submit',  async (req, res) => {
     
     res.json({
       score,
-      totalMarks: test.totalMarks,
-      passed: score >= test.passingMarks,
+      totalMarks: test.totalMarks || answers.length,
+      passed: score >= (test.passingMarks || 0),
       attemptId: attempt._id
     });
   } catch (error) {
+    console.error('Submit test error:', error);
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 });
